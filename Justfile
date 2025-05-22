@@ -10,3 +10,6 @@ system-info:
 
 setup:
     {{ python }} -m pip install -r requirements.txt
+
+detect_text image:
+    {{python}} text_detection.py "{{ image }}"
